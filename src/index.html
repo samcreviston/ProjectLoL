@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sam Creviston">
+    <meta name="description" content="This page by Sam Creviston is one of many in the WDD 231 - Web Frontend Development I Course that is intended to teach me intermediate web frontend development skills.">
+
+    <meta property="og:title" content="Lair of Legends Campiagns">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samcreviston.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://samcreviston.github.io/wdd231/project/images/lol-logo.jpeg">
+
+    <link rel="icon" href="images/lol-favicon.ico">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+
+    <title>Lair of Legends Campaigns</title>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header>
+        <button class="return-to-home"><img id="header-logo" src="images/lol-logo-fit.jpg" alt="Lair of Legends logo" loading="lazy"></button>
+        <section id="title-section">
+            <h1 id="main-title">Lair of Legends Campaigns</h1>
+        <h2 id="main-subtitle">The Home of 5e Campaigns, Modules, and One-shots</h2>
+        </section>
+        <a href="#" id="campaign-form-button">Enter your campaign</a>
+    </header>
+
+    <main>
+        <!-- h3 description of the site -->
+         <section id="welcome-section">
+            <h3 id="welcome-title">Welcome DMs and fantasy content seekers, the Lair of Legends is home to content that is home brewed in realms unknown, or just off the beaten path in the Forgotten Realms! <br><br>Explore below, or click "Enter your campaign" above to contribute to the Lair of Legends!</h3>
+
+         </section>
+         
+         <!-- campaign section -->
+        <h2 id="content-section-title" class="narrow-main">Contents</h2>
+
+        <!-- toggle switch for on or off condensed list -->
+        <div id="toggle-switch">
+        <input type="checkbox" id="compact-checkbox"
+        onclick="toggleSwitch()">
+        <label for="toggle-switch-checkbox" class="toggle-switch-label">compact list
+            <span class="toggle-switch-inner"></span>
+            <span class="toggle-switch-switch"></span>
+            
+        </label>
+        </div>
+
+        
+        <section id="campaign-list-section" class="narrow-main"> <!-- list of campaigns pulled from an array from a JSON file, filterable as compact list or as full list -->
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <!-- campaign submission form -->
+     <dialog id="campaign-submission-dialog">
+        <form action="thankyou.html">
+            <h1>Campaign Submission</h1>
+                <p>Fill out the below form to submit your campaign for approval to the Lair Master! Add your contact info at the bottom to know when your content is approved and how to publish it to LoL.</p>
+                <br>
+            <label for="campaignName">Campaign Name:</label>
+            <input type="text" id="campaignName" name="campaignName" title="Campaign Name" pattern="^[A-Za-z\s-]{4,}$" required><br>
+
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" title="Description" required></textarea><br>
+
+            <label for="adventureCount">Adventure Count:</label>
+            <select id="adventureCount" name="adventureCount" title="Adventure Count">
+                <option value="1">1 (One-Shot)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10-12">10-12</option>
+                <option value="13-15">13-15</option>
+                <option value="16-19">16-19</option>
+                <option value="20-30">20-30</option>
+                <option value="31-40">31-40</option>
+            </select><br>
+
+            <label for="partyLevel">Average Party Level to Begin this Campaign:</label>
+            <select id="partyLevel" name="partyLevel" title="Average Party Level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select><br>
+
+            <label for="partySize">Average Party Size for this Campaign:</label>
+            <select id="partySize" name="partySize" title="Average Party Size">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2-3">2-3</option>
+                <option value="3">3</option>
+                <option value="3-4">3-4</option>
+                <option value="4">4</option>
+                <option value="4-5">4-5</option>
+                <option value="5">5</option>
+                <option value="5-6">5-6</option>
+                <option value="6">6</option>
+                <option value="6-7">6-7</option>
+                <option value="7">7</option>
+                <option value="7-8">7-8</option>
+                <option value="8">8</option>
+                <option value="8-9">8-9</option>
+                <option value="9">9</option>
+                <option value="9-10">9-10</option>
+                <option value="10+">10+</option>
+            </select><br>
+
+            <h2>Contact Information</h2>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@example.com" required><br>
+
+            <input type="hidden" id="timestamp" name="timestamp" value=""><br>
+
+            <button type="submit" id="submit-campaign">Enter Campaign Outline for LoL Approval</button>
+            <br>
+            <br>
+        </form>
+    </dialog>
+
+    </main>
+    
+    <footer>
+        <section id="footer-sec">
+            <p id="left-footer">
+                &copy;<span id="currentyear"></span>
+                - Sam Creviston - Georgia
+            </p>
+            </section>
+            <img id="header-logo" src="images/lol-logo-fit.jpg" alt="Lair of Legends logo" loading="lazy">
+            <p id="lastModified"></p>
+    </footer>
+</body>
+</html> 
