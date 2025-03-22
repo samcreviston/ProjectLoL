@@ -29,22 +29,40 @@ function loadTemplate(path) {
 
 export function loadHeaderFooter() {
     return new Promise((resolve, reject) => {
-      try {
-        // Get the header and footer contents
-        const loadHeader = loadTemplate("/partials/header.html");
-        const loadFooter = loadTemplate("/partials/footer.html");
-  
-        // Get the header and footer elements from the dom
-        const headerElement = document.getElementById('header');
-        const footerElement = document.getElementById('footer');
-  
-        // Render the header and footer
-        Promise.all([
-          renderWithTemplate(loadHeader, headerElement),
-          renderWithTemplate(loadFooter, footerElement)
-        ]);
-      } catch (error) {
-        reject(error);
-      }
+        try {
+            // Get the header and footer contents
+            const loadHeader = loadTemplate("/partials/header.html");
+            const loadFooter = loadTemplate("/partials/footer.html");
+
+            // Get the header and footer elements from the DOM
+            const headerElement = document.getElementById('header');
+            const footerElement = document.getElementById('footer');
+
+            // Render the header and footer
+            Promise.all([
+                renderWithTemplate(loadHeader, headerElement),
+                renderWithTemplate(loadFooter, footerElement)
+            ]).then(() => {
+                resolve(); // Resolve the promise after rendering
+            }).catch(reject); // Reject if there's an error in rendering
+        } catch (error) {
+            reject(error);
+        }
     });
+
   }
+
+export function loadYearDateModified() {
+  const cYearElement = document.getElementById("currentyear"); 
+  const lastModElement = document.getElementById("lastModified");
+
+  if (cYearElement) {
+      const currentYear = new Date().getFullYear();
+      cYearElement.textContent = currentYear;
+  }
+
+  if (lastModElement) {
+      const modified = new Date(document.lastModified).toLocaleDateString();;
+      lastModElement.textContent = "last modified: " + modified;
+  }
+}
