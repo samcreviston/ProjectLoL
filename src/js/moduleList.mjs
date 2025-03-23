@@ -69,7 +69,7 @@ export async function displayFullCampaigns() {
     campaignSection.innerHTML = ''; // Clear existing content
 
     // Use map to create and append campaign cards
-    campaigns
+    Object.values(campaigns[0])
         .map(createFullCampaignCard)
         .forEach(campaignCard => campaignSection.appendChild(campaignCard));
 }
@@ -89,7 +89,7 @@ export async function displayCompactCampaigns() {
     campaignSection.appendChild(campaignCardHeader);
 
     //Use map to create and append campaign cards
-    campaigns
+    Object.values(campaigns[0])
         .map(createCompactCampaignCard)
         .forEach(campaignCard => campaignSection.appendChild(campaignCard));
 }

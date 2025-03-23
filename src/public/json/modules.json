@@ -1,18 +1,18 @@
 [
     {
-        "name" : "The Legion Athanatos",
-        "description" : "Embark on a journey as mercenaries for the Gods of the Greek Pantheon.",
-        "averageStartPartyLevel" : "1",
-        "averagePartySize" : "5",
-        "adventureCount" : "12",
-        "filePath" : "./legion-athanatos.html"
-    },
-    {
-        "name" : "The Beryllium Paradox",
-        "description" : "Jump aboard the Beryllium Paradox, an ancient sky ship piloted by the Captain in search of a successor for reasons not yet known.",
-        "averageStartPartyLevel" : "4",
-        "averagePartySize" : "4",
-        "adventureCount" : "2",
-        "filePath" : "./beryllium-paradox.html"
+        "TheLegionAthanatos": {
+            "name" : "The Legion Athanatos",
+            "description" : "Embark on a journey as mercenaries for the Gods of the Greek Pantheon.",
+            "averageStartPartyLevel" : "1",
+            "averagePartySize" : "5",
+            "adventureCount" : "12"
+        },
+        "TheBerylliumParadox": {
+            "name" : "The Beryllium Paradox",
+            "description" : "Jump aboard the Beryllium Paradox, an ancient sky ship piloted by the Captain in search of a successor for reasons not yet known.",
+            "averageStartPartyLevel" : "4",
+            "averagePartySize" : "4",
+            "adventureCount" : "2"
+        }
     }
 ]
