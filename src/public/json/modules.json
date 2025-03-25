@@ -1,6 +1,7 @@
 [
     {
         "TheLegionAthanatos": {
+            "id": 1000001,
             "name" : "The Legion Athanatos",
             "description" : "Embark on a journey as mercenaries for the Gods of the Greek Pantheon.",
             "averageStartPartyLevel" : "1",
@@ -8,6 +9,7 @@
             "adventureCount" : "12"
         },
         "TheBerylliumParadox": {
+            "id": 1000002,
             "name" : "The Beryllium Paradox",
             "description" : "Jump aboard the Beryllium Paradox, an ancient sky ship piloted by the Captain in search of a successor for reasons not yet known.",
             "averageStartPartyLevel" : "4",

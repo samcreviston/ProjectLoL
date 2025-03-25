@@ -30,20 +30,20 @@ function loadTemplate(path) {
 export function loadHeaderFooter() {
     return new Promise((resolve, reject) => {
         try {
-            // Get the header and footer contents
+            //get header and footer contents
             const loadHeader = loadTemplate("/partials/header.html");
             const loadFooter = loadTemplate("/partials/footer.html");
 
-            // Get the header and footer elements from the DOM
+            //get header and footer elements
             const headerElement = document.getElementById('header');
             const footerElement = document.getElementById('footer');
 
-            // Render the header and footer
+            //Render header and footer
             Promise.all([
                 renderWithTemplate(loadHeader, headerElement),
                 renderWithTemplate(loadFooter, footerElement)
             ]).then(() => {
-                resolve(); // Resolve the promise after rendering
+                resolve(); // Resolve promise after rendering
             }).catch(reject); // Reject if there's an error in rendering
         } catch (error) {
             reject(error);
@@ -51,6 +51,28 @@ export function loadHeaderFooter() {
     });
 
   }
+
+export function loadDialog(dialogID) {
+    return new Promise((resolve, reject) => {
+        try {
+            //get the Dialog content
+            const loadDialog = loadTemplate("/partials/submission.html");
+
+            //get the dialog element
+            const dialogElement = document.getElementById(dialogID);
+
+            //render dialog
+            Promise.all([
+                renderWithTemplate(loadDialog, dialogElement)
+            ]).then(() => {
+                console.log("dialog posted");
+                resolve();
+            }).catch(reject);
+        } catch (error) {
+            reject(error);
+        }
+    })
+}  
 
 export function loadYearDateModified() {
   const cYearElement = document.getElementById("currentyear"); 

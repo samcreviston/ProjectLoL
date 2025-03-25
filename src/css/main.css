@@ -266,7 +266,10 @@ button {
   }
 
 dialog {
+    width: 90%;
+    height: 90%;
     background-color: var(--accent2-white);
+    color: var(--base-slate-black);
     align-self: center;
     justify-self: center;
 }
