@@ -110,11 +110,18 @@ body {
     margin: 0 auto;
     padding: 0;
 
+    max-width: 1900px;
+    min-width: 400px;
+
     font-family: var(--sorts-body-font);
     font-size: 18px;
     text-align: center;
 
-    background-color: var(--accent2-white);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../images/floral-paper-canvas-or-parchment.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -170,10 +177,8 @@ header a {
     text-shadow: 2px 2px 4  px rgba(255, 255, 255, 0.2);
 }
 
-main {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../images/floral-paper-canvas-or-parchment.webp');
-    padding-bottom: 100px;
-    min-height: 1000px;
+html {
+    scroll-behavior: smooth;
 }
 
 .narrow-main {

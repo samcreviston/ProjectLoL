@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+  }
+  
+  main {
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+  
+  #intro {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .add-section {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+  }
+  
+  .add-section button {
+    background: none;
+    color: black;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .add-section-line {
+    flex-grow: 1;
+    height: 3px;
+    background-color: #ccc;
+  }
+  
+  .story-section {
+    margin-bottom: 1rem;
+    border-left: 4px solid #444;
+    padding-left: 1rem;
+  }
+  
+  .story-section textarea {
+    width: 100%;
+    min-height: 100px;
+    font-size: 1rem;
+  }
+  
+  .story-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+  }
