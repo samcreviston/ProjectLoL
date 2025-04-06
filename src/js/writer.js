@@ -6,7 +6,6 @@ loadHeaderFooter().then(() => {
     loadYearDateModified();
 }).catch(error => console.error("Error loading header/footer:", error));
 
+//dynamically generate the first + tool
 const form = document.getElementById("story-form");
-  
-// Kick things off by adding the first + tool
 form.appendChild(createAddSectionTool(form));

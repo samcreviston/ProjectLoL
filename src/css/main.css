@@ -93,7 +93,7 @@
     --base-slate-black: #141414;
 
     /* rgba versions of all above colors */
-    --primary-purple-rgba: rgba(33, 11, 44, 1);
+    --primary-purple-rgba: rgba(33, 11, 44, .25);
     --primary-tan-rgba: rgba(192, 161, 119, 1);
     --accent1-red-rgba: rgba(183, 24, 21, .4);
     --accent2-white-rgba: rgba(245, 245, 245, .4);
@@ -114,7 +114,7 @@ body {
     min-width: 400px;
 
     font-family: var(--sorts-body-font);
-    font-size: 18px;
+    font-size: 1.25rem;
     text-align: center;
 
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../images/floral-paper-canvas-or-parchment.webp');
