@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sam Creviston">
@@ -13,21 +13,22 @@
 
     <link rel="icon" href="../public/images/lol-favicon.ico">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/writer.css">
-    <script src="../js/writer.js" type="module" ></script>
+    <link rel="stylesheet" href="../css/writerHome.css">
+    <script src="../js/writerHome.js" type="module" ></script>
 
     <title>Lol - Creator</title>
 </head>
 <body>
-
     <header id="header"></header>
-
-    <main id="creator-container">
-        <h3 id="intro">Welcome to the Story Creator! Use the + icon to add different types of sections to your story. You can insert story text, author notes, images, or additional details—just click the + to begin!</h3>
-      
-        <form id="story-form"></form>
-    </main>      
-    
+  
+    <main>
+      <h1>Welcome to Your Story Dashboard</h1>
+      <div id="draft-list" class="card-container"></div>
+      <button id="new-story-button">Start New Story</button>
+    </main>
+  
     <footer id="footer"></footer>
-</body>
+  
+    <script type="module" src="scripts/dashboard.js"></script>
+  </body>
 </html> 
