@@ -7,11 +7,4 @@ Promise.all([loadHeaderFooter(), loadDialog("campaign-submission-dialog")])
 .then(() => {
     loadYearDateModified();
     displayFullCampaigns();
-
-    const SubmitContentButton = document.querySelector("#content-form-button");
-    const formDialogue = document.querySelector("#campaign-submission-dialog");
-
-    SubmitContentButton.addEventListener("click", () => {
-        formDialogue.showModal();
-    }); 
 }).catch(error => console.error("Error loading header/footer:", error));

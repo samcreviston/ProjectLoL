@@ -57,7 +57,9 @@ export function loadHeaderFooterImages(imagePath) {
     let footerLogo = document.getElementById("footer-logo");
     headerLogo.src = `${imagePath}public/images/lol-logo-fit.jpg`;
     footerLogo.src = `${imagePath}public/images/lol-logo-fit.jpg`;
-    console.log(headerLogo);
+
+    let writerLink = document.getElementById("content-form-button");
+    writerLink.href = `${imagePath}writer/index.html`;
 }
 
 export function loadDialog(dialogID) {
