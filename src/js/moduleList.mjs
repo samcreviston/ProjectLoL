@@ -25,7 +25,7 @@ function createElement(tag, className, content = '', href = '') {
 function createFullCampaignCard(campaign) {
     const campaignCard = createElement('div', 'full-campaign-card');
 
-    const campaignNameElement = createElement('a', 'campaign-name', `<h3>${campaign.name}</h3>`, './module/index.html');
+    const campaignNameElement = createElement('a', 'campaign-name', `<h3>${campaign.name}</h3>`, `./module/index.html?id=${campaign.id}`);
     campaignCard.appendChild(campaignNameElement);
 
     const campaignDescriptionElement = createElement('p', 'campaign-description', campaign.description);
@@ -47,7 +47,7 @@ function createFullCampaignCard(campaign) {
 function createCompactCampaignCard(campaign) {
     const campaignCard = createElement('div', 'compact-campaign-card');
 
-    const campaignNameElement = createElement('a', 'campaign-name', `<h3>${campaign.name}</h3>`, './module/index.html');
+    const campaignNameElement = createElement('a', 'campaign-name', `<h3>${campaign.name}</h3>`, `./module/index.html?id=${campaign.id}`);
     campaignCard.appendChild(campaignNameElement);
 
     const averageStartPartyLevelElement = createElement('p', 'campaign-stat', campaign.averageStartPartyLevel);

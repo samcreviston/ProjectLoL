@@ -52,6 +52,14 @@ export function loadHeaderFooter() {
 
   }
 
+export function loadHeaderFooterImages(imagePath) {
+    let headerLogo = document.getElementById("header-logo");
+    let footerLogo = document.getElementById("footer-logo");
+    headerLogo.src = `${imagePath}public/images/lol-logo-fit.jpg`;
+    footerLogo.src = `${imagePath}public/images/lol-logo-fit.jpg`;
+    console.log(headerLogo);
+}
+
 export function loadDialog(dialogID) {
     return new Promise((resolve, reject) => {
         try {

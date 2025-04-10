@@ -1,8 +1,9 @@
-import { loadHeaderFooter } from "./utils.mjs";
+import { loadHeaderFooter, loadHeaderFooterImages } from "./utils.mjs";
 import { loadYearDateModified } from "./utils.mjs";
 import { initializeWriterForm } from "./writerUtils.mjs";
 
 loadHeaderFooter().then(() => {
+    loadHeaderFooterImages("../");
     loadYearDateModified();
 }).catch(error => console.error("Error loading header/footer:", error));
 

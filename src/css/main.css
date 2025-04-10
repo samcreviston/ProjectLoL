@@ -144,7 +144,7 @@ h1 {
     background-color: var(--primary-purple);
 }
 
-#header-logo {
+#header-logo, #footer-logo {
     max-width: 100px;
     margin-top: 5px;
     aspect-ratio: 1/1;
