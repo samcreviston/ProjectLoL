@@ -11,7 +11,7 @@ WDD330 final project
 
 - **Package Management**: Managed via `npm`, with dependencies and scripts defined in `package.json`.
 
-- **Version Control**: Git is used for version control, with a `.gitignore` file specifying untracked files and directories.
+- **Version Control**: Git is used for version control, with a `.gitignore`.
 
 - **Project Structure**: The `src/` directory contains the source code, indicating a separation of concerns and organized codebase.
 
