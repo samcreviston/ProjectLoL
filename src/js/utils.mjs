@@ -31,8 +31,8 @@ export function loadHeaderFooter() {
     return new Promise((resolve, reject) => {
         try {
             //get header and footer contents
-            const loadHeader = loadTemplate("/partials/header.html");
-            const loadFooter = loadTemplate("/partials/footer.html");
+            const loadHeader = loadTemplate("/public/partials/header.html");
+            const loadFooter = loadTemplate("/public/partials/footer.html");
 
             //get header and footer elements
             const headerElement = document.getElementById('header');
