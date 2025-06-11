@@ -31,8 +31,8 @@ export function loadHeaderFooter() {
     return new Promise((resolve, reject) => {
         try {
             //get header and footer contents
-            const loadHeader = loadTemplate("/public/partials/header.html");
-            const loadFooter = loadTemplate("/public/partials/footer.html");
+            const loadHeader = loadTemplate("/partials/header.html");
+            const loadFooter = loadTemplate("/partials/footer.html");
 
             //get header and footer elements
             const headerElement = document.getElementById('header');
@@ -55,8 +55,8 @@ export function loadHeaderFooter() {
 export function loadHeaderFooterImages(imagePath) {
     let headerLogo = document.getElementById("header-logo");
     let footerLogo = document.getElementById("footer-logo");
-    headerLogo.src = `${imagePath}public/images/lol-logo-fit.jpg`;
-    footerLogo.src = `${imagePath}public/images/lol-logo-fit.jpg`;
+    headerLogo.src = `${imagePath}images/lol-logo-fit.jpg`;
+    footerLogo.src = `${imagePath}images/lol-logo-fit.jpg`;
 
     let writerLink = document.getElementById("content-form-button");
     writerLink.href = `${imagePath}writer/index.html`;
