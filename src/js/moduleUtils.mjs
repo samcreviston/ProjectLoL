@@ -47,7 +47,7 @@ async function handleAdventureWithStat(sectionArray, sectionDiv) {
 }
 
 export async function getcampaignData() {
-    const campaignsUrl = "./public/json/modules.json";
+    const campaignsUrl = "./json/modules.json";
     const response = await fetch(campaignsUrl);
     const campaigns = await response.json();
     return campaigns;
@@ -121,7 +121,7 @@ export async function loadModuleById() {
 
     try {
         // Fetch the modules index (modules.json) to get the metadata
-        const modulesResponse = await fetch('../public/json/modules.json');
+        const modulesResponse = await fetch('../json/modules.json');
         if (!modulesResponse.ok) throw new Error("Modules index not found");
         const modulesData = await modulesResponse.json();
         
@@ -132,7 +132,7 @@ export async function loadModuleById() {
         console.log(moduleMetaData);
 
         // Fetch the module content (story json)
-        const moduleContentResponse = await fetch(`../public/json/modules/${id}.json`);
+        const moduleContentResponse = await fetch(`../json/modules/${id}.json`);
         if (!moduleContentResponse.ok) throw new Error("Module content not found");
         const moduleData = await moduleContentResponse.json();
         console.log(moduleData);
