@@ -34,8 +34,8 @@ export function loadHeaderFooter() {
             const baseUrl = import.meta.env.BASE_URL || "/";
 
             //get header and footer contents
-            const loadHeader = loadTemplate(`${baseUrl}partials/header.html`);
-            const loadFooter = loadTemplate(`${baseUrl}partials/footer.html`);
+            const loadHeader = loadTemplate(`partials/header.html`);
+            const loadFooter = loadTemplate(`partials/footer.html`);
 
             //get header and footer elements
             const headerElement = document.getElementById('header');
@@ -69,7 +69,7 @@ export function loadDialog(dialogID) {
     return new Promise((resolve, reject) => {
         try {
             //get the Dialog content
-            const loadDialog = loadTemplate("/partials/submission.html");
+            const loadDialog = loadTemplate("partials/submission.html");
 
             //get the dialog element
             const dialogElement = document.getElementById(dialogID);
