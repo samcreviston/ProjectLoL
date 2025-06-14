@@ -1,0 +1,22 @@
+[
+    {
+        "the-legion-athanatos-1000001": {
+            "id": "the-legion-athanatos-1000001",
+            "name" : "The Legion Athanatos",
+            "author" : "Sam Creviston",
+            "description" : "Embark on a journey as mercenaries for the Gods of the Greek Pantheon.",
+            "averageStartPartyLevel" : "1",
+            "averagePartySize" : "5",
+            "adventureCount" : "12"
+        },
+        "the-beryllium-paradox-1000002": {
+            "id": "the-beryllium-paradox-1000002",
+            "name" : "The Beryllium Paradox",
+            "author" : "Sam Creviston",
+            "description" : "Jump aboard the Beryllium Paradox, an ancient sky ship piloted by the Captain in search of a successor for reasons not yet known.",
+            "averageStartPartyLevel" : "4",
+            "averagePartySize" : "4",
+            "adventureCount" : "2"
+        }
+    }
+]

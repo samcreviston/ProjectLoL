@@ -1,0 +1,60 @@
+{
+    "module": [
+      {
+        "type": "adventure-title",
+        "text": "A Strange Eye"
+      },
+      {
+        "type": "DM-notes",
+        "text": "The party, having been recruited by the King after their individual or combined works of good in the small growing kingdom, has been appointed to tame the wilds near the settlement of Aracia which the King hopes intends to grow into a bustling outpost of trade by the end of the year. Here the chooses their first quest appointed by the King, one of the three below, however you would like to present it."
+      },
+      {
+        "type": "subtitle",
+        "text": "Undead Knights"
+      },
+      {
+        "adventure-with-stat": [
+            {
+            "story-text": "The land is clearly cursed. The people long ago said to have fallen into the trickery of an Undead Warlock, hiding in the robes of Light Cleric. Many of those people are now the"
+            },
+            {
+            "stat": [
+                {
+                "stat-id": "monsters/animated-armor",
+                "stat-name": "Undead Knights"
+                }
+            ]
+            },
+            {
+            "story-text": "that wander the forests without a soul, seeking that of another. For every undead helm you bring to the settlement manager is 50 Gold for your crew."
+            }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Dragons Roar"
+      },
+      {
+       "adventure-with-stat": [
+            {
+            "story-text": "Just the past few days there has been a bone-chilling roar just like the fables of dragons on their way to destroy or protect. If the party investigates or talks to the townspeople, they will find that the feel the air literally chill during the roars. Either way they will find out the hard way how chaotic the"
+            },
+            {
+            "stat": [
+                {
+                "stat-id": "monsters/white-dragon-wyrmling",
+                "stat-name": "White Dragon Wyrmling"
+                }
+            ]
+            },
+            {
+            "story-text": "of this forest can be. Though chilling an icy dragon can be, how thrilling the loot shall be too!"
+            }
+        ]
+      },
+      {
+        "type": "DM-notes",
+        "text": "At some points throughout this adventure, each player will have the chance to roll a perception check to spot a somewhat large and whispy floating eye watching them. If none have succeeded, i recommend it is noticed by the last player instead of rolling a perception check. If followed it will lead them to a boat seemingly waiting just for them. If not, there are other monsters to tame here, and people to meet."
+      }
+    ]
+  }

@@ -1,0 +1,30 @@
+{
+    "module": [
+        {
+            "type": "adventure-title",
+            "text": "All Aboard and All For You"
+        },
+        {
+            "type": "DM-notes",
+            "text": "Whether each member came by purchasing a ticket, receiving a formal invitation, or winning the local adventurer guild's raffle, each party member steps aboard the timeless and breathtaking Beryllium Paradox, a skyship like no other, traveling through floating islands of the Skyborn Shattered Isles."
+        },
+        {
+            "adventure-with-stat": [
+                {
+                    "story-text": "While there are no pirate attacks or mutinies today, the ship seems to be moving at an incredible speed. causing concern to the crew. Upon investigation, the party finds from the crew and the Captains Journal that a captain of the Beryllium Paradox lives for 1000 years, at which time the boat soars at great speed to it's origin, a land of the old ones who built their civilizations above the world for peace and innovation. While the old ones are long gone, their mechanical golems will destroy any being stepping foot upon the island that is not of the old ones, therefore making it a challenge to retrieve the materials that the Captain wrote down as necessary to re embark on the Beryllium Paradox's journey. Before that though they must deal with the"
+                },
+                {
+                    "stat": [
+                        {
+                            "stat-id": "monsters/iron-golem",
+                            "stat-name": "Golem"
+                        }
+                    ]
+                },
+                {
+                    "story-text": "at the ready to clear the docking ship!"
+                }
+            ]
+        }
+    ]
+}

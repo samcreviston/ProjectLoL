@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sam Creviston">
+    <meta name="description" content="This page by Sam Creviston is one of many in the WDD 231 - Web Frontend Development I Course that is intended to teach me intermediate web frontend development skills.">
+
+    <meta property="og:title" content="Lair of Legends Campiagns">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samcreviston.github.io/projectLoL/src/index.html">
+    <meta property="og:image" content="https://samcreviston.github.io/projectLoL/src/images/lol-logo.jpeg">
+
+    <link rel="icon" href="images/lol-favicon.ico">
+    
+    
+
+    <title>Lair of Legends Campaigns</title>
+  <script type="module" crossorigin src="/ProjectLoL/assets/main-6fd220a5.js"></script>
+  <link rel="modulepreload" crossorigin href="/ProjectLoL/assets/moduleUtils-1ec2c42c.js">
+  <link rel="stylesheet" href="/ProjectLoL/assets/moduleUtils-89289b8a.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>  <!-- overlay for form -->
+
+    <header id="header"></header>
+
+    <main>
+
+        <!-- h3 description of the site -->
+         <section id="welcome-section">
+            <h2 id="welcome-title">Welcome DMs and fantasy content seekers, the Lair of Legends is home to content that is home brewed in realms unknown, or just off the beaten path in the Forgotten Realms! <br><br>Explore below, or click "Enter your campaign" above to contribute to the Lair of Legends!</h2>
+
+         </section>
+         
+         <!-- campaign section -->
+        <h2 id="content-section-title" class="narrow-main">Contents</h2>
+
+        <!-- toggle switch for on or off condensed list -->
+        <div id="toggle-switch">
+        <input type="checkbox" id="compact-checkbox"
+        onclick="toggleSwitch()">
+        <label for="toggle-switch-checkbox" class="toggle-switch-label">compact list
+            <span class="toggle-switch-inner"></span>
+            <span class="toggle-switch-switch"></span>
+            
+        </label>
+        </div>
+
+        
+        <section id="campaign-list-section" class="narrow-main"> <!-- list of campaigns pulled from an array from a JSON file, filterable as compact list or as full list -->
+    </section>
+    <br>
+
+    <dialog id="campaign-submission-dialog"></dialog>
+
+    </main>
+    
+    <footer id="footer"></footer>
+</body>
+</html> 

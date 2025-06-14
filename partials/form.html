@@ -1,0 +1,94 @@
+<!-- campaign submission form -->
+<dialog id="campaign-submission-dialog">
+    <form action="thankyou.html">
+        <h1>Campaign Submission</h1>
+            <p>Fill out the below form to submit your campaign for approval to the Lair Master! Add your contact info at the bottom to know when your content is approved and how to publish it to LoL.</p>
+            <br>
+        <label for="campaignName">Campaign Name:</label>
+        <input type="text" id="campaignName" name="campaignName" title="Campaign Name" pattern="^[A-Za-z\s-]{4,}$" required><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" title="Description" required></textarea><br>
+
+        <label for="adventureCount">Adventure Count:</label>
+        <select id="adventureCount" name="adventureCount" title="Adventure Count">
+            <option value="1">1 (One-Shot)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10-12">10-12</option>
+            <option value="13-15">13-15</option>
+            <option value="16-19">16-19</option>
+            <option value="20-30">20-30</option>
+            <option value="31-40">31-40</option>
+        </select><br>
+
+        <label for="partyLevel">Average Party Level to Begin this Campaign:</label>
+        <select id="partyLevel" name="partyLevel" title="Average Party Level">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select><br>
+
+        <label for="partySize">Average Party Size for this Campaign:</label>
+        <select id="partySize" name="partySize" title="Average Party Size">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="2-3">2-3</option>
+            <option value="3">3</option>
+            <option value="3-4">3-4</option>
+            <option value="4">4</option>
+            <option value="4-5">4-5</option>
+            <option value="5">5</option>
+            <option value="5-6">5-6</option>
+            <option value="6">6</option>
+            <option value="6-7">6-7</option>
+            <option value="7">7</option>
+            <option value="7-8">7-8</option>
+            <option value="8">8</option>
+            <option value="8-9">8-9</option>
+            <option value="9">9</option>
+            <option value="9-10">9-10</option>
+            <option value="10+">10+</option>
+        </select><br>
+
+        <h2>Contact Information</h2>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@example.com" required><br>
+
+        <input type="hidden" id="timestamp" name="timestamp" value=""><br>
+
+        <button type="submit" id="submit-campaign">Enter Campaign Outline for LoL Approval</button>
+        <br>
+        <br>
+    </form>
+</dialog>
