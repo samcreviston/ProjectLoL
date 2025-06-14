@@ -33,9 +33,9 @@ export function loadHeaderFooter() {
             // Dynamically get base URL for correct path in dev and preview
             const baseUrl = import.meta.env.BASE_URL || "/";
 
-            //get header and footer contents
-            const loadHeader = loadTemplate(`partials/header.html`);
-            const loadFooter = loadTemplate(`partials/footer.html`);
+            //get header and footer contents with absolute paths using baseUrl
+            const loadHeader = loadTemplate(`${baseUrl}partials/header.html`);
+            const loadFooter = loadTemplate(`${baseUrl}partials/footer.html`);
 
             //get header and footer elements
             const headerElement = document.getElementById('header');
