@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sam Creviston">
@@ -9,28 +9,26 @@
     <meta property="og:title" content="Lair of Legends Campiagns">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://samcreviston.github.io/projectLoL/src/index.html">
-    <meta property="og:image" content="https://samcreviston.github.io/projectLoL/src/public/images/lol-logo.jpeg">
+    <meta property="og:image" content="https://samcreviston.github.io/projectLoL/src/images/lol-logo.jpeg">
 
-    <link rel="icon" href="images/lol-favicon.ico">
+    <link rel="icon" href="../images/lol-favicon.ico">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/module.css">
-    <script src="../js/module.js" type="module" ></script>
+    <link rel="stylesheet" href="../css/writerHome.css">
+    <script src="../js/writerHome.js" type="module" ></script>
 
-    <title>Lair of Legends Campaigns</title>
+    <title>Lol - Creator</title>
 </head>
 <body>
     <header id="header"></header>
+  
     <main>
-        <!-- Introduction -->
-        <h1 class="campaign-header"></h1>
-        <p class="author"></p>
-        <p class="description"></p>
-
-        <!-- Adventures -->
-        <section class="adventure">
-            <!-- Adventure sections will be populated here -->
-        </section>
+      <h1>Welcome to Your Story Dashboard</h1>
+      <div id="draft-list" class="card-container"></div>
+      <button id="new-story-button">Start New Story</button>
     </main>
+  
     <footer id="footer"></footer>
-</body>
-</html>
+  
+    <script type="module" src="scripts/dashboard.js"></script>
+  </body>
+</html> 
