@@ -30,8 +30,13 @@ function loadTemplate(path) {
 export function loadHeaderFooter() {
     return new Promise((resolve, reject) => {
         try {
-            // Dynamically get base URL for correct path in dev and preview
-            const baseUrl = import.meta.env.BASE_URL || "/";
+            // Safely get base URL for correct path in dev and preview
+            let baseUrl = "/";
+            try {
+                baseUrl = import.meta.env.BASE_URL;
+            } catch {
+                baseUrl = "/";
+            }
 
             //get header and footer contents with absolute paths using baseUrl
             const loadHeader = loadTemplate(`${baseUrl}partials/header.html`);
